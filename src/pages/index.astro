@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const typeformUrl = 'https://s9gdqalwzro.typeform.com/to/N4fFRT6b';
 ---
 
 <Layout title="30 DAO">
@@ -32,7 +34,7 @@ import Layout from "../layouts/Layout.astro";
       <section>
         <h2>All are welcome</h2>
         <p>
-          If you're open to participating, say hi. We'd love to hear from you.
+          If you're open to participating, <a href={typeformUrl} class="select-none text-gradient">say hi</a>. We'd love to hear from you.
         </p>
       </section>
     </div>
@@ -41,10 +43,11 @@ import Layout from "../layouts/Layout.astro";
     >
       <h3 class="flex">30 DAO</h3>
 
-      <button
-        class="px-4 py-2 mb-1 md:px-8 active:mt-1 active:mb-0 mr-1 active:mr-0 rounded-full bg-violet-400 text-yellow-100 hover:bg-violet-500 active:bg-violet-600 shadow-hard focus:outline-none active:shadow-none"
+      <a
+        href={typeformUrl}
+        class="select-none px-4 py-2 mb-1 md:px-8 active:mt-1 active:mb-0 mr-1 active:mr-0 rounded-full bg-violet-400 text-yellow-100 hover:bg-violet-500 active:bg-violet-600 shadow-hard focus:outline-none active:shadow-none"
         >Join the experiment
-      </button>
+      </a>
     </footer>
   </div>
 </Layout>
