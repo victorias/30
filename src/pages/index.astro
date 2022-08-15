@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="30 DAO">
+  <div class="flex flex-col font-mono">
+    <header class="p-10 flex flex-col justify-center">
+      <h1 class="">
+        Be a <span class="text-gradient">part</span> of the social experiment
+        <br />
+        to form <span class="text-gradient">bonds</span> across time and space
+      </h1>
+
+      <h2 class="">
+        30 strangers come together virtually for 30 days. What connections will
+        be made?
+      </h2>
+    </header>
+
+    <div class="p-10 flex flex-col body">
+      <section class="mb-20">
+        <h2 class="">A new social experience</h2>
+        <p>
+          30DAO is for all humans seeking community online. Groups of 30 members
+          gather digitally in a private chat server that exists for 30 days. We
+          get to know each other, but we don't use our real names. We talk about
+          our interests, but we don't talk about work. We share our experiences
+          and we support each other. After 30 days, the server shuts down...
+        </p>
+      </section>
+
+      <section>
+        <h2>All are welcome</h2>
+        <p>
+          If you're open to participating, say hi. We'd love to hear from you.
+        </p>
+      </section>
+    </div>
+    <footer
+      class="fixed text-lg h-16 bg-violet-100 bottom-0 left-0 flex items-center justify-between w-screen pl-10 pr-9"
+    >
+      <h3 class="flex">30 DAO</h3>
+
+      <button
+        class="px-4 py-2 mb-1 md:px-8 active:mt-1 active:mb-0 mr-1 active:mr-0 rounded-full bg-violet-400 text-yellow-100 hover:bg-violet-500 active:bg-violet-600 shadow-hard focus:outline-none active:shadow-none"
+        >Join the experiment
+      </button>
+    </footer>
+  </div>
+</Layout>
+
+<style>
+  :root {
+    --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+  }
+  header {
+    height: calc(100vh - theme(spacing.16));
+  }
+
+  .body {
+    margin-bottom: calc(25vh);
+  }
+
+  .text-gradient {
+    font-weight: 900;
+    background-image: var(--astro-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position-y: 100%;
+    border-radius: 0.4rem;
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      background-position-y: 0%;
+    }
+    50% {
+      background-position-y: 80%;
+    }
+  }
+</style>
